@@ -1,0 +1,38 @@
+package classe;
+
+public class Produto {
+
+	String nome;
+	double preco;
+	static final double maes = 0.35;
+	static final double natal = 0.35;
+	static final double desconto = 0.25;
+	
+	Produto() {
+		
+	}
+	
+	Produto (String nomeInicial, double precoProduto) {
+		nome = nomeInicial; 
+		preco = precoProduto;
+	
+	}
+
+	double precoComDesconto() {
+		return preco*(1 - desconto);
+	}
+	double precoComDesconto(double descontoDoGerente) {
+			
+		return preco * (1 - desconto + descontoDoGerente);
+		
+	}
+	double natal() {
+		return preco*(1-natal);
+		
+	}
+	double diaDasMaes() {
+		
+		return preco*(1-maes);
+	}
+	
+}

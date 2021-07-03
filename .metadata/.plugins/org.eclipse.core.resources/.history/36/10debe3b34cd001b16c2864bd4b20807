@@ -1,0 +1,19 @@
+package arrays;
+
+import java.util.Scanner;
+
+public class ExercicoArray {
+	
+	public static void main(String[] args) {
+		
+		double [] nota = new double [4];
+		Scanner entrada = new Scanner(System.in);
+		
+		
+	
+		
+		entrada.close();
+		
+	}
+
+}

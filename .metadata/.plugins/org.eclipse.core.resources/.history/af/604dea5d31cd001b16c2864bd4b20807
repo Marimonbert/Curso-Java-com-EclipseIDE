@@ -1,0 +1,27 @@
+package arrays;
+
+import java.util.Scanner;
+
+public class ExercicoArray {
+	
+	public static void main(String[] args) {
+		
+		double [] nota = new double [4];
+		Scanner entrada = new Scanner(System.in);
+		double posicao;
+		
+
+		System.out.println("Quantas notas você quer informar? ");
+		posicao = entrada.nextDouble();
+		nota[0] = posicao;
+		
+		System.out.println("Digite a primeira nota: ");
+		nota[0] = entrada.nextDouble();
+		
+	
+		
+		entrada.close();
+		
+	}
+
+}

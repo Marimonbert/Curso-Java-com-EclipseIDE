@@ -1,0 +1,26 @@
+package classe;
+
+public class ProdutoTeste {
+
+	public static void main(String[] args) {
+		
+		Produto p1 = new Produto("Notebook" , 4.500);
+		p1.natal();
+		
+		System.out.printf("Nome do produto: %d\n Preço normal do produto: %d % \n"
+				+ " o valor com desconto é de %d $$" ,p1.nome, p1.preco, p1.natal());
+
+		Produto p2 = new Produto("Geladeira" , 3.200);
+		p2.precoComDesconto();
+	
+		System.out.println(p2.precoComDesconto());
+		
+		Produto p3 = new Produto("Armário" , 2.500);
+		p3.diaDasMaes();
+		
+		System.out.println(p3.diaDasMaes());
+		
+		
+	}
+	
+}
